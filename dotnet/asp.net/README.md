@@ -11,7 +11,7 @@ The `Zip.Write()` function has some issues that aren't ideal in a server environ
 The error you will get at runtime gives you a hint at one of them.
 
 - Correct the error so that the program will actually work.
-- Improve the scalability of the solution.
+- Improve the scalability of the solution by e.g.:
   - Enable request cancellation.
   - Ensure threads are not blocked/held up needlessly.
   - Ensure memory consumption per request is low.
