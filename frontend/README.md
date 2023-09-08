@@ -7,7 +7,7 @@ Create your own public repo that you can share with us when you've finished.
 Try to structure the code as you would in a production app rather than a PoC.  
 Prioritize finishing the tasks over designing a neat looking UI.  
 Write TS or JS code. We prefer TS if you already know the language.  
-Use React if you feel comfortable, or any other libraries if you prefer. 
+Use React if you feel comfortable, or any other libraries if you prefer.
 
 ## 1. Load scene
 
@@ -18,15 +18,17 @@ The view's camera controller should be a `"flight"` controller.
 You should then be able to see the condos building and move around in the 3D scene.
 
 Links:
-- [DEMO - Getting started](https://docs.novorender.com/docs/tutorials/getting_started)
-- [DEMO - Loading scenes](https://docs.novorender.com/docs/tutorials/loading_scenes)
-- [DOCS - createCameraController()](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.API#createcameracontroller)
+
+- [DEMO - Introduction](https://docs.novorender.com/docs/web_api)
+- [DEMO - Getting started](https://docs.novorender.com/docs/guides/getting_started)
+- [DEMO - Loading scenes](https://docs.novorender.com/docs/guides/loading_scenes)
+- [DOCS - Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
 
 ## 2. Store camera positions
 
 Create 3 buttons on top of the Canvas.  
 They do not need to look pretty.  
-Each button should work like this: 
+Each button should work like this:
 
 - `Shift + Left click`: Save current camera position and rotation.
 - `Left click`: Go to the stored position and rotation.
@@ -34,29 +36,33 @@ Each button should work like this:
 You should then be able to move around the 3D scene and save up to 3 positions that you can jump back to.
 
 Links:
-- [DOCS - Camera position](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.Camera#position)
-- [DOCS - Camera rotation](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.Camera#rotation)
-- [DOCS - Camera moveTo()](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.CameraController#moveto)
+
+- [DOCS - Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
+- [DOCS - Camera position](https://docs.novorender.com/docs/web_api/Interfaces/interface.Camera#position)
+- [DOCS - Camera rotation](https://docs.novorender.com/docs/web_api/Interfaces/interface.Camera#rotation)
+- [DOCS - Camera moveTo()](https://docs.novorender.com/docs/web_api/Classes/class.FlightController#moveto)
 
 ## 3. Isolate objects  
 
 Create a form with a single text input element together with a submit button on top of the Canvas.  
 No need to make these elements pretty either.  
 The form should work like this:  
+
 - Search the scene for objects containing the input string.
 - If any results (e.g. search for `"chair"`):
-    - Hide all other objects.
-    - Show only the results in their neutral colours. 
+  - Hide all other objects.
+  - Show only the results in their neutral colours.
 - If no result (e.g search for `"choir"`):
-    - Show all objects in their neutral colours.
+  - Show all objects in their neutral colours.
 - Abort currently running search if a new one is starting.  
 
 You should then be able to search for objects and isolate them so that only objects matching the search string are displayed.  
 You should also be able to show all objects again by searching for a string that returns no results.  
 
 Links:
-- [DEMO - Searching](https://docs.novorender.com/docs/tutorials/searching)
-- [DOCS - Search](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.Scene#search)
-- [DEMO - Object highlighting](https://docs.novorender.com/docs/tutorials/object_selection#object-highlighting)
-- [DOCS - createHighlight()](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.API#createhighlight)
-- [DOCS - NeutralHighlightParams](https://docs.novorender.com/docs/webgl-api/interfaces/NovoRender.NeutralHighlightParams)
+
+- [DEMO - Searching](https://docs.novorender.com/docs/guides/searching)
+- [DOCS - Search](https://docs.novorender.com/legacy/docs/data-js-api/interfaces/DataJsAPI.ObjectDB#search)
+- [DEMO - Object highlighting](https://docs.novorender.com/docs/guides/object_selection#object-highlighting)
+- [DOCS - createColorSetHighlight()](https://docs.novorender.com/docs/web_api/Functions/function.createColorSetHighlight)
+- [DOCS - createNeutralHighlight](https://docs.novorender.com/docs/web_api/Functions/function.createNeutralHighlight)
