@@ -11,7 +11,7 @@ Use React if you feel comfortable, or any other libraries if you prefer.
 
 ## 1. Load scene
 
-Load the condos scene with ID `3b5e65560dc4422da5c7c3f827b6a77c`.  
+Load the condos scene with ID `95a89d20dd084d9486e383e131242c4c`.  
 The canvas should take up the entire width and height of the browser window.  
 The view's camera controller should be a `"flight"` controller.
 
