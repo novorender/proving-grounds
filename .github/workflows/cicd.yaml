@@ -25,7 +25,7 @@ jobs:
         run: |
           npm test
       - name: check install
-        if: ! contains(steps.i, 'found 0 vulnerabilities')
+        if: "!contains(steps.i, 'found 0 vulnerabilities')"
         run: exit 1
       - name: check output
 
