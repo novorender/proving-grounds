@@ -26,7 +26,7 @@ jobs:
           npm test
       - name: check install
 
-        if: "${{ ! steps.i == "found 0 vulnerabilities" }}"
+        if: "${{ ! steps.i == 'found 0 vulnerabilities' }}"
         run: exit 1
       - name: check output
 
