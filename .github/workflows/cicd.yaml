@@ -23,12 +23,12 @@ jobs:
         id: test
         run: |
           npm test 
-          echo "audit=$(npm audit)" >> $GITHUB_OUTPUT
+          if $(npm audit --audit-level=low)
       - name: check install
       # echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
         # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
-          echo ${{steps.npmi.outputs.audit}}
+          echo ${{steps.npmi.outputs.*}}
           exit 1
       - name: check output
 
