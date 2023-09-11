@@ -9,17 +9,20 @@ jobs:
   npm:
     name: npm
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ${{env:GITHUB_WORKSPACE}}
+    # defaults:
+    #   run:
+    #     working-directory: ./devops/hello
     steps:
       - name: install dependencies
+        working-directory: ./devops/hello
         run: |
           npm i
       - name: run test
+        working-directory: ./devops/hello
         id: test
         run: |
           npm test
       - name: check output
+        working-directory: ./devops/hello
         if: "${{ ! steps.test == 0 }}"
         run: exit 1
