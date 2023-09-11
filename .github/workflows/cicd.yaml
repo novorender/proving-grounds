@@ -9,9 +9,9 @@ jobs:
   npm:
     name: npm
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: devops/hello
+    # defaults:
+    #   run:
+    #     working-directory: devops/hellos
     steps:
       - name: install dependencies
         run: |
