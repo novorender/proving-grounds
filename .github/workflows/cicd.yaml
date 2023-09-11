@@ -18,25 +18,17 @@ jobs:
       - name: install dependencies
         id: npmi
         run: |
-          {
-            echo 'JSON_RESPONSE<<EOF'
-            npmi=${npm i}
-            echo EOF
-          } >> $GITHUB_OUTPUT
+          npm i
       - name: run test
         id: test
         run: |
-          {
-            echo 'JSON_RESPONSE<<EOF'
-            test=${npm test}
-            echo EOF
-          } >> $GITHUB_OUTPUT
-          
+          npm test 
+          echo "audit=$(npm audit)" >> $GITHUB_OUTPUT
       - name: check install
       # echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
         # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
-          echo ${{steps.npmi.outputs.npmi}}
+          echo ${{steps.npmi.outputs.audit}}
           exit 1
       - name: check output
 
