@@ -1,0 +1,20 @@
+name: ci/cd pipeline
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - devops/hello/**
+jobs:
+  npm:
+    steps:
+      - name: install dependencies
+        run: |
+          npm i
+      - name: run test
+        id: test
+        run: |
+          npm test
+      - name: check output
+        if: "${{ ! steps.test == 0 }}"
+        run: exit 1
