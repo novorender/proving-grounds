@@ -18,11 +18,11 @@ jobs:
       - name: install dependencies
         id: npmi
         run: |
-          echo "npmi=$(npm i)" >> $GITHUB_OUTPUT
+          echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
       - name: run test
         id: test
         run: |
-          echo "TEST=$(npm test)" >> $GITHUB_OUTPUT
+          echo "TEST=$(npm test)\n" >> $GITHUB_OUTPUT
       - name: check install
         # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
