@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ${env:GITHUB_WORKSPACE}
+        working-directory: ${{env:GITHUB_WORKSPACE}}
     steps:
       - name: install dependencies
         run: |
