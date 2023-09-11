@@ -18,7 +18,7 @@ jobs:
       - name: install dependencies
         id: npmi
         run: |
-          npm i
+          echo "npmi=$(npm i)" >> $GITHUB_OUTPUT
       - name: run test
         id: test
         run: |
