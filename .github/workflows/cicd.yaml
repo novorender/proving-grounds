@@ -30,10 +30,10 @@ jobs:
           }>> "$GITHUB_OUTPUT"
       - name: check install
       # echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
-        if: "contains(${{steps.npmi.outputs.audit}}, 'found 0')"
+        if: ! contains(${{steps.npmi.outputs.audit}}, found 0)
         run: |
           echo "${{steps.npmi.outputs.audit}}"
-          echo "!contains(${{steps.npmi.outputs.audit}}, 'found 0')"
+          echo "!contains(${{steps.npmi.outputs.audit}}, found 0)"
           exit 1
       - name: check output
         if: "!contains(${{steps.test.outputs.test}}, 'passed!')"
