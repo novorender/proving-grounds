@@ -28,7 +28,7 @@ jobs:
       # echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
         # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
-          echo ${{steps.npmi.outputs.*}}
+          echo ${{steps.test.outputs.*}}
           exit 1
       - name: check output
 
