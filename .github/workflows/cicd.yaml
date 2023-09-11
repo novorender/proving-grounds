@@ -26,5 +26,5 @@ jobs:
           npm test
       - name: check output
 
-        if: "${{ ! steps.test == 0 }}"
+        if: "${{ ! steps.test == 'passed' }}"
         run: exit 1
