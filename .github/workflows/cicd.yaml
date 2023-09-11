@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./devops/hello
+        working-directory: devops/hello
     steps:
       - name: install dependencies
         run: |
