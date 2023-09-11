@@ -16,7 +16,7 @@ jobs:
       - name: Checkout the repo 
         uses: actions/checkout@v3
       - name: install dependencies
-      - id: npmi
+        id: npmi
         run: |
           npm i
       - name: run test
@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "TEST=$(npm test)" >> $GITHUB_OUTPUT
       - name: check install
-        if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
+        # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
           echo ${{steps.npmi.outputs.test}}
           exit 1
