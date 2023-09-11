@@ -27,7 +27,7 @@ jobs:
       - name: check install
         if: "!contains(steps.i, 'found 0 vulnerabilities')"
         run: |
-          echo ${steps.i}
+          echo ${{steps.i}}
           exit 1
       - name: check output
 
