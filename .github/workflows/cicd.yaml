@@ -16,7 +16,7 @@ jobs:
       - name: Checkout the repo 
         uses: actions/checkout@v3
       - name: install dependencies
-
+        id: i
         run: |
           npm i
       - name: run test
@@ -24,6 +24,10 @@ jobs:
         id: test
         run: |
           npm test
+      - name: check install
+
+        if: "${{ ! steps.i == '0' }}"
+        run: exit 1
       - name: check output
 
         if: "${{ ! steps.test == 'passed' }}"
