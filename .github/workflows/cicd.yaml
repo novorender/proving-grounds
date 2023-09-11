@@ -20,7 +20,7 @@ jobs:
         run: |
           {
             echo 'JSON_RESPONSE<<EOF'
-            npm i
+            npmi=${npm i}
             echo EOF
           } >> $GITHUB_OUTPUT
       - name: run test
@@ -28,7 +28,7 @@ jobs:
         run: |
           {
             echo 'JSON_RESPONSE<<EOF'
-            npm test
+            test=${npm test}
             echo EOF
           } >> $GITHUB_OUTPUT
           
@@ -36,7 +36,7 @@ jobs:
       # echo "npmi=$(npm i)\n" >> $GITHUB_OUTPUT
         # if: "!contains(${{steps.npmi.outputs.test}}, 'found 0 vulnerabilities')"
         run: |
-          echo ${{steps.npmi.outputs.test}}
+          echo ${{steps.npmi.outputs.npmi}}
           exit 1
       - name: check output
 
