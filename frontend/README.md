@@ -19,10 +19,9 @@ You should then be able to see the condos building and move around in the 3D sce
 
 Links:
 
-- [DEMO - Introduction](https://docs.novorender.com/docs/web_api)
-- [DEMO - Getting started](https://docs.novorender.com/docs/guides/getting_started)
-- [DEMO - Loading scenes](https://docs.novorender.com/docs/guides/loading_scenes)
-- [DOCS - Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
+- [Getting started](https://docs.novorender.com/docs/tutorial/getting_started)
+- [Loading scenes](https://docs.novorender.com/docs/guides/loading_scenes)
+- [Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
 
 ## 2. Store camera positions
 
@@ -37,10 +36,8 @@ You should then be able to move around the 3D scene and save up to 3 positions t
 
 Links:
 
-- [DOCS - Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
-- [DOCS - Camera position](https://docs.novorender.com/docs/web_api/Interfaces/interface.Camera#position)
-- [DOCS - Camera rotation](https://docs.novorender.com/docs/web_api/Interfaces/interface.Camera#rotation)
-- [DOCS - Camera moveTo()](https://docs.novorender.com/docs/web_api/Classes/class.FlightController#moveto)
+- [RenderState.Camera](https://docs.novorender.com/docs/web_api/Interfaces/interface.RenderStateCamera)
+- [Camera moveTo()](https://docs.novorender.com/docs/web_api/Classes/class.FlightController#moveto)
 
 ## 3. Isolate objects  
 
@@ -61,8 +58,6 @@ You should also be able to show all objects again by searching for a string that
 
 Links:
 
-- [DEMO - Searching](https://docs.novorender.com/docs/guides/searching)
-- [DOCS - Search](https://docs.novorender.com/legacy/docs/data-js-api/interfaces/DataJsAPI.ObjectDB#search)
-- [DEMO - Object highlighting](https://docs.novorender.com/docs/guides/object_selection#object-highlighting)
-- [DOCS - createColorSetHighlight()](https://docs.novorender.com/docs/web_api/Functions/function.createColorSetHighlight)
-- [DOCS - createNeutralHighlight](https://docs.novorender.com/docs/web_api/Functions/function.createNeutralHighlight)
+- [Searching](https://docs.novorender.com/docs/guides/searching)
+- [Render state](https://docs.novorender.com/docs/guides/render_state)
+- [createNeutralHighlight()](https://docs.novorender.com/docs/web_api/Functions/function.createNeutralHighlight)
