@@ -19,7 +19,7 @@ You should then be able to see the condos building and move around in the 3D sce
 
 Links:
 
-- [Getting started](https://docs.novorender.com/docs/tutorial/getting_started)
+- [Getting started](https://docs.novorender.com/docs/web_api/tutorial/getting_started)
 - [Loading scenes](https://docs.novorender.com/docs/guides/loading_scenes)
 - [Camera Controllers](https://docs.novorender.com/docs/guides/camera_controllers)
 
@@ -36,8 +36,8 @@ You should then be able to move around the 3D scene and save up to 3 positions t
 
 Links:
 
-- [RenderState.Camera](https://docs.novorender.com/docs/web_api/Interfaces/interface.RenderStateCamera)
-- [Camera moveTo()](https://docs.novorender.com/docs/web_api/Classes/class.FlightController#moveto)
+- [RenderState.Camera](https://docs.novorender.com/docs/web_api/api_reference/interfaces/RenderStateCamera)
+- [Camera moveTo()](https://docs.novorender.com/docs/web_api/api_reference/classes/FlightController#moveto)
 
 ## 3. Isolate objects  
 
@@ -60,4 +60,4 @@ Links:
 
 - [Searching](https://docs.novorender.com/docs/guides/searching)
 - [Render state](https://docs.novorender.com/docs/guides/render_state)
-- [createNeutralHighlight()](https://docs.novorender.com/docs/web_api/Functions/function.createNeutralHighlight)
+- [createNeutralHighlight()](https://docs.novorender.com/docs/web_api/api_reference/functions/createNeutralHighlight)
